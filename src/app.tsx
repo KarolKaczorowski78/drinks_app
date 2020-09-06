@@ -4,11 +4,11 @@ import Drinks from './pages/drinks';
 import Contact from './pages/contact';
 import DrinkDetails from './pages/drink_details';
 import ErrorPage from './pages/404';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, HashRouter } from 'react-router-dom';
 
 const App = () => {
     return (
-        <Router>
+        <HashRouter basename={ __dirname }>
             <>
                 <Switch>
                     <Route path='/' exact component={ Home } />
@@ -18,7 +18,7 @@ const App = () => {
                     <Route component={ ErrorPage } />
                 </Switch>
             </>
-        </Router>
+        </HashRouter>
     )
 }
 
