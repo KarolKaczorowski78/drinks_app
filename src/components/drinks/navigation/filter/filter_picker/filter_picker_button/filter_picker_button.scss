@@ -1,0 +1,13 @@
+@import '../../../../../../universal/scss/mixins/transition';
+
+.filter-picker-button {
+    width: 50%;
+    height: auto;
+    padding: 5px 0px;
+    text-align: center;
+    margin: 5px 0 5px;
+    background: black;
+    border: 2px solid rgb(255, 197, 39);
+    color: rgb(255, 197, 39);
+    @include transition(.15s ease-out);
+}

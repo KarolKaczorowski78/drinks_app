@@ -1,0 +1,34 @@
+@import '../../../universal/scss/mixins/prefixes';
+
+.scroll-to-top-button {
+    border: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 3vh;
+    right: 3vw;
+    color: rgb(255, 197, 39);
+    background: none;
+    visibility: hidden;
+}
+
+.shown {
+    visibility: visible;
+    @include prefixes(animation, 1s scroll-to-top-btn-anim infinite, (webkit));
+    &:hover {
+        animation: none;
+    }
+}
+
+@keyframes scroll-to-top-btn-anim {
+    0% {
+        opacity: 1;
+    }
+    35% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

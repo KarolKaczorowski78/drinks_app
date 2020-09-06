@@ -1,0 +1,23 @@
+.browse-drinks-button {
+    position: absolute;
+    top: 10px;
+    width: 100px;
+    height: 30px;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, .5);
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+    text-decoration: none;
+    z-index: 3;
+}
+
+.left-redirect-button {
+    left: 10px;
+}
+
+.right-redirect-button {
+    right: 20px;
+}

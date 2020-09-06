@@ -1,0 +1,17 @@
+.drink-ingredients-list {
+    position: absolute;
+    top: 100%;
+    left: 2px;
+    z-index: 1;
+    color: white;
+    list-style: none;
+    padding: 5px 10px;
+    visibility: hidden;
+    li {
+        border-bottom: 1px solid white;
+        padding: 5px 0px 5px;
+        &:last-child {
+            border: none;
+        }
+    }
+}

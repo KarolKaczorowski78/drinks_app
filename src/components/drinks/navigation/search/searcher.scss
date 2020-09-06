@@ -1,0 +1,15 @@
+.search-form-input,
+.search-form-submit {
+    display: inline-block;
+    font-size: 15px;
+    padding: 5px 6px;
+    border: 2px solid rgb(255, 197, 39);
+    color: rgb(255, 197, 39);
+    background: rgba(0, 0, 0, .7);
+    border-radius: 0;
+    -webkit-appearance: none;
+}
+
+.search-form-submit {
+    border-left: none;
+}

@@ -1,0 +1,42 @@
+@import '../../universal/scss/mixins/flexbox';
+@import '../../universal/scss/mixins/transform';
+
+.contact-section {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    position: relative;
+    @include flexbox(start, center, column);
+    * { 
+        z-index: 2;
+        color: white;
+    }
+
+    & > * {         
+        opacity: 0;
+        visibility: hidden;
+        &:not(img) {
+            @include transform(translateY(50px));
+        }
+    }
+    img {
+        z-index: 1;
+        @include transform(translateX(-50px));
+    }
+    h3 {
+        color: rgb(255, 197, 39);
+    } 
+}
+
+@media (max-width: 800px) {
+    .contact-section img {
+        opacity: .5;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+}

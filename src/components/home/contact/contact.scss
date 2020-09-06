@@ -1,0 +1,32 @@
+@import '../../../universal/scss/mixins/transition';
+@import '../../../universal/scss/mixins/prefixes';
+@import '../../../universal/scss/mixins/transform';
+
+.contact {
+    width: 75px;
+    height: 60px;
+    border: 2px solid rgb(255, 197, 39);
+    background: rgba(0, 0, 0, .6);
+    z-index: 3;
+    color: rgb(255, 197, 39);
+    position: fixed;
+    font-size: 30px;
+    right: 3vw;
+    top: 3vh;
+    border-radius: 50%;
+    text-align: center;
+    @include transition(.4s ease-in);
+    @include prefixes(animation, 1s contact-anim infinite, (webkit));
+}
+
+@keyframes contact-anim {
+    0% {
+        @include transform(scale(1));
+    }
+    50% {
+        @include transform(scale(1.18));
+    }
+    100% {
+        @include transform(scale(1));
+    }
+}

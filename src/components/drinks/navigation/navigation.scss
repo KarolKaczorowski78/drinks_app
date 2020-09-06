@@ -1,0 +1,15 @@
+@import '../../../universal/scss/mixins/flexbox';
+@import '../../../universal/scss/mixins/prefixes';
+@import '../../../universal/scss/mixins/transition';
+
+.navigation {
+    width: 98vw;
+    height: 100px;
+    @include flexbox(space-between, center);
+    box-sizing: border-box;
+    padding: 0 20px;
+    position: relative;
+    border: 2px solid rgb(255, 197, 39);
+    background: black;
+    color: white;
+}

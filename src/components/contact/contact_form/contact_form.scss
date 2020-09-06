@@ -1,0 +1,21 @@
+@import '../../../universal/scss/mixins/flexbox';
+
+.contact-section-form  {
+    width: 300px;
+    height: 300px;
+    margin: 20px 0 10px;
+    @include flexbox(space-evenly, center, column);
+    label {
+        @include flexbox(start, center, column);
+        input, textarea {
+            padding: 5px 10px;
+            margin: 5px 0 15px;
+            background: rgba(0, 0, 0, .7);
+        }
+    }
+    &-submit {
+        width: 120px;
+        height: 40px;
+    }
+
+}  

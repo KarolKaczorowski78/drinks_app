@@ -1,0 +1,40 @@
+@import '../../../../../universal/scss/mixins/transition';
+@import '../../../../../universal/scss/mixins/flexbox';
+@import '../../../../../universal/scss/mixins/transform';
+@import '../../../../../universal/scss/mixins/prefixes';
+
+.filter-list-container {
+    width: 98vw;
+    height: auto;
+    padding: 20px 0;
+    border-radius: 10%;
+    border-top-right-radius: 0%;
+    border: 2px solid rgb(255, 197, 39);
+    position: absolute;
+    top: calc(100% + 5px);
+    background: rgba(0, 0, 0, .6);
+    left: 0;
+    z-index: 3;
+    @include transform(scaleY(0));
+    @include prefixes(transform-origin, top, (webkit, moz, ms));
+    @include transition(.2s ease-out);
+    &-title {
+        display: block;
+        color: black;
+    };
+
+    &::before {
+        content: "";
+        height: 35px;
+        width: 20px;
+        top: -35px;
+        right: 40px;
+        position: absolute;
+        background: linear-gradient(120deg, transparent 50%, rgb(255, 197, 39) 50%, rgba(0, 0, 0, .6) 60%);
+        border-right: 2px solid black;
+    }
+    &:hover {
+        @include transform(scale(1));
+        @include transition(.3s ease-out);
+    }
+}

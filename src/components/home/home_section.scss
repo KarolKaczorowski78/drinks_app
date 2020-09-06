@@ -1,0 +1,11 @@
+.home {
+    width: 100vw;
+    height: auto;
+    * {
+        z-index: 2;
+    }
+
+    img {
+        z-index: 1;
+    }
+}

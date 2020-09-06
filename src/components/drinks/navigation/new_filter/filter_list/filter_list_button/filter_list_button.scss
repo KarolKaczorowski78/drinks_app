@@ -1,0 +1,29 @@
+@import '../../../../../../universal/scss/mixins/transition';
+
+.filter-list-button {
+    width: 150px;
+    height: auto;
+    padding: 5px 0px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    font-size: 17px;
+    margin-top: 10px;
+    margin: 10px 10px 0px;
+    display: inline-block;
+    position: relative;
+    background: rgba(0, 0, 0, .9);
+    border: 2px solid rgb(255, 197, 39);
+    @include transition(.3s ease-in);
+    color: white;
+    &:hover {
+        background: rgb(255, 197, 39);
+        color: black;
+    }
+    &-filter-name {
+        font-size: 1.1rem;
+    }
+    &-chosen-filter {
+        font-size: .9rem;
+    }
+}

@@ -1,0 +1,37 @@
+@import '../../../universal/scss/mixins/flexbox';
+@import '../../../universal/scss/mixins/transform';
+@import '../../../universal/scss/mixins/transition';
+
+.sidebar {
+    height: calc(100vh - 150px);
+    min-height: 200px;
+    z-index: 2;
+    margin-top: 10px;
+    width: 250px;
+    position: absolute;
+    left: -200px;
+    z-index: 2;
+    @include transition(.3s ease-in-out);
+    button {
+        &:hover {
+            background: orange;
+        }
+    }
+    &-button {
+        visibility: hidden;
+    }
+    &-shown {
+        @include transform(translateX(200px));
+        background: white;
+        button {
+            visibility: visible;
+        }
+    }
+}
+
+.sidebar-relative {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @include flexbox(space-evenly, center, column, nowrap);
+}

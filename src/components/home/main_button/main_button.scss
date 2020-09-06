@@ -1,0 +1,15 @@
+@import '../../../universal/scss/mixins/transform';
+
+.main-button {
+    border: 2px solid white;
+    display: block;
+    height: 50px;
+    width: 160px;
+    background: none;
+    margin-top: 30px;
+    font-size: 1.1rem;
+    @include transform(translateY(20px));
+    &:hover {
+        background: rgb(255, 197, 39);
+    }
+}

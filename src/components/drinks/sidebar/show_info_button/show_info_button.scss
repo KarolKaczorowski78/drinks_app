@@ -1,0 +1,11 @@
+.show-info-button {
+    background: none!important;
+    border: none;
+    font-size: 30px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    &:hover {
+        color: orange;
+    }
+}
