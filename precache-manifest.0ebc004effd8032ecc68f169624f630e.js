@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9174a8e3a79f618ab9234bd7d75f13ae",
+    "revision": "4d37010ae289867d347dbe2ee80f6fff",
     "url": "/drinks_app/index.html"
   },
   {
-    "revision": "63a962b330d41e533ae7",
+    "revision": "09dfc0e2b67ff8a98c2f",
     "url": "/drinks_app/static/css/main.aaf2ab47.chunk.css"
   },
   {
-    "revision": "082c075b33584eac7004",
-    "url": "/drinks_app/static/js/2.431147af.chunk.js"
+    "revision": "11fbd12ccc118920e15a",
+    "url": "/drinks_app/static/js/2.7f97bddb.chunk.js"
   },
   {
     "revision": "3b360bdbbf2b060d70fbfa785d0a310b",
-    "url": "/drinks_app/static/js/2.431147af.chunk.js.LICENSE.txt"
+    "url": "/drinks_app/static/js/2.7f97bddb.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "63a962b330d41e533ae7",
-    "url": "/drinks_app/static/js/main.22f35985.chunk.js"
+    "revision": "09dfc0e2b67ff8a98c2f",
+    "url": "/drinks_app/static/js/main.ea08f4b0.chunk.js"
   },
   {
     "revision": "f2ed22ed588311e1cc44",
