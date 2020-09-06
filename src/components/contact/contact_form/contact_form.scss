@@ -6,7 +6,7 @@
     margin: 20px 0 10px;
     @include flexbox(space-evenly, center, column);
     label {
-        @include flexbox(start, center, column);
+        @include flexbox(flex-start, center, column);
         input, textarea {
             padding: 5px 10px;
             margin: 5px 0 15px;

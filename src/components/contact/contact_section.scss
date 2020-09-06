@@ -9,7 +9,7 @@
     padding-top: 50px;
     padding-bottom: 20px;
     position: relative;
-    @include flexbox(start, center, column);
+    @include flexbox(flex-start, center, column);
     * { 
         z-index: 2;
         color: white;
