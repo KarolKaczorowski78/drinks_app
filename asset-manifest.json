@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/drinks_app/static/css/main.a1c67977.chunk.css",
-    "main.js": "/drinks_app/static/js/main.eacb64ee.chunk.js",
-    "main.js.map": "/drinks_app/static/js/main.eacb64ee.chunk.js.map",
+    "main.css": "/drinks_app/static/css/main.099ec1d2.chunk.css",
+    "main.js": "/drinks_app/static/js/main.0678efb1.chunk.js",
+    "main.js.map": "/drinks_app/static/js/main.0678efb1.chunk.js.map",
     "runtime-main.js": "/drinks_app/static/js/runtime-main.397397ce.js",
     "runtime-main.js.map": "/drinks_app/static/js/runtime-main.397397ce.js.map",
-    "static/js/2.f96a9b28.chunk.js": "/drinks_app/static/js/2.f96a9b28.chunk.js",
-    "static/js/2.f96a9b28.chunk.js.map": "/drinks_app/static/js/2.f96a9b28.chunk.js.map",
+    "static/js/2.9bf05c13.chunk.js": "/drinks_app/static/js/2.9bf05c13.chunk.js",
+    "static/js/2.9bf05c13.chunk.js.map": "/drinks_app/static/js/2.9bf05c13.chunk.js.map",
     "index.html": "/drinks_app/index.html",
-    "precache-manifest.3acd5d0904d6e688adc7bde8e6dbcb6a.js": "/drinks_app/precache-manifest.3acd5d0904d6e688adc7bde8e6dbcb6a.js",
+    "precache-manifest.4b94158f48828319751df2e3c8241e8e.js": "/drinks_app/precache-manifest.4b94158f48828319751df2e3c8241e8e.js",
     "service-worker.js": "/drinks_app/service-worker.js",
-    "static/css/main.a1c67977.chunk.css.map": "/drinks_app/static/css/main.a1c67977.chunk.css.map",
-    "static/js/2.f96a9b28.chunk.js.LICENSE.txt": "/drinks_app/static/js/2.f96a9b28.chunk.js.LICENSE.txt",
+    "static/css/main.099ec1d2.chunk.css.map": "/drinks_app/static/css/main.099ec1d2.chunk.css.map",
+    "static/js/2.9bf05c13.chunk.js.LICENSE.txt": "/drinks_app/static/js/2.9bf05c13.chunk.js.LICENSE.txt",
     "static/media/AboutImg.jpg": "/drinks_app/static/media/AboutImg.ec303732.jpg",
     "static/media/AlcoholicImg.jpg": "/drinks_app/static/media/AlcoholicImg.38c7d28b.jpg",
     "static/media/CategoryImg.jpg": "/drinks_app/static/media/CategoryImg.b208cb0d.jpg",
@@ -23,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.397397ce.js",
-    "static/js/2.f96a9b28.chunk.js",
-    "static/css/main.a1c67977.chunk.css",
-    "static/js/main.eacb64ee.chunk.js"
+    "static/js/2.9bf05c13.chunk.js",
+    "static/css/main.099ec1d2.chunk.css",
+    "static/js/main.0678efb1.chunk.js"
   ]
 }
