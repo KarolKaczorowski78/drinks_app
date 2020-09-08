@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/drinks_app/static/css/main.aaf2ab47.chunk.css",
-    "main.js": "/drinks_app/static/js/main.7679347f.chunk.js",
-    "main.js.map": "/drinks_app/static/js/main.7679347f.chunk.js.map",
+    "main.css": "/drinks_app/static/css/main.a1c67977.chunk.css",
+    "main.js": "/drinks_app/static/js/main.eacb64ee.chunk.js",
+    "main.js.map": "/drinks_app/static/js/main.eacb64ee.chunk.js.map",
     "runtime-main.js": "/drinks_app/static/js/runtime-main.397397ce.js",
     "runtime-main.js.map": "/drinks_app/static/js/runtime-main.397397ce.js.map",
     "static/js/2.f96a9b28.chunk.js": "/drinks_app/static/js/2.f96a9b28.chunk.js",
     "static/js/2.f96a9b28.chunk.js.map": "/drinks_app/static/js/2.f96a9b28.chunk.js.map",
     "index.html": "/drinks_app/index.html",
-    "precache-manifest.4a540af4419c43b6b1dd0f39696ec7b0.js": "/drinks_app/precache-manifest.4a540af4419c43b6b1dd0f39696ec7b0.js",
+    "precache-manifest.3acd5d0904d6e688adc7bde8e6dbcb6a.js": "/drinks_app/precache-manifest.3acd5d0904d6e688adc7bde8e6dbcb6a.js",
     "service-worker.js": "/drinks_app/service-worker.js",
-    "static/css/main.aaf2ab47.chunk.css.map": "/drinks_app/static/css/main.aaf2ab47.chunk.css.map",
+    "static/css/main.a1c67977.chunk.css.map": "/drinks_app/static/css/main.a1c67977.chunk.css.map",
     "static/js/2.f96a9b28.chunk.js.LICENSE.txt": "/drinks_app/static/js/2.f96a9b28.chunk.js.LICENSE.txt",
     "static/media/AboutImg.jpg": "/drinks_app/static/media/AboutImg.ec303732.jpg",
-    "static/media/AlcoholicImg.jpg": "/drinks_app/static/media/AlcoholicImg.adc071b7.jpg",
-    "static/media/CategoryImg.jpg": "/drinks_app/static/media/CategoryImg.f108d502.jpg",
+    "static/media/AlcoholicImg.jpg": "/drinks_app/static/media/AlcoholicImg.38c7d28b.jpg",
+    "static/media/CategoryImg.jpg": "/drinks_app/static/media/CategoryImg.b208cb0d.jpg",
     "static/media/ContactImg.jpg": "/drinks_app/static/media/ContactImg.27eca137.jpg",
-    "static/media/GlassImg.jpg": "/drinks_app/static/media/GlassImg.0b64fb43.jpg",
-    "static/media/IngredientImg.jpg": "/drinks_app/static/media/IngredientImg.9aa7acea.jpg",
+    "static/media/GlassImg.jpg": "/drinks_app/static/media/GlassImg.5412c5e1.jpg",
+    "static/media/IngredientImg.jpg": "/drinks_app/static/media/IngredientImg.9586ec1e.jpg",
     "static/media/IntroductionImg.jpg": "/drinks_app/static/media/IntroductionImg.f49e0959.jpg",
     "static/media/main.scss": "/drinks_app/static/media/fa-solid-900.f3a7d3b5.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.397397ce.js",
     "static/js/2.f96a9b28.chunk.js",
-    "static/css/main.aaf2ab47.chunk.css",
-    "static/js/main.7679347f.chunk.js"
+    "static/css/main.a1c67977.chunk.css",
+    "static/js/main.eacb64ee.chunk.js"
   ]
 }

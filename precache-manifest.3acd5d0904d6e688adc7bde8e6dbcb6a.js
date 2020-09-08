@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b56abbdf2857313ad3d3f634bcc89af",
+    "revision": "f6d7509d80efeb9354e391e15db00749",
     "url": "/drinks_app/index.html"
   },
   {
-    "revision": "417e89694016e8a83369",
-    "url": "/drinks_app/static/css/main.aaf2ab47.chunk.css"
+    "revision": "36d7c24436d9a3dedf63",
+    "url": "/drinks_app/static/css/main.a1c67977.chunk.css"
   },
   {
     "revision": "d3f5b1534bc8b9724ac6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/drinks_app/static/js/2.f96a9b28.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "417e89694016e8a83369",
-    "url": "/drinks_app/static/js/main.7679347f.chunk.js"
+    "revision": "36d7c24436d9a3dedf63",
+    "url": "/drinks_app/static/js/main.eacb64ee.chunk.js"
   },
   {
     "revision": "f2ed22ed588311e1cc44",
@@ -28,24 +28,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/drinks_app/static/media/AboutImg.ec303732.jpg"
   },
   {
-    "revision": "adc071b7785b7158368c676ebd8258af",
-    "url": "/drinks_app/static/media/AlcoholicImg.adc071b7.jpg"
+    "revision": "38c7d28b2583b28427a76f37fa77646c",
+    "url": "/drinks_app/static/media/AlcoholicImg.38c7d28b.jpg"
   },
   {
-    "revision": "f108d5024dcc965d008f1eb9834690fe",
-    "url": "/drinks_app/static/media/CategoryImg.f108d502.jpg"
+    "revision": "b208cb0d0d65d256da362df0cd5c9ab0",
+    "url": "/drinks_app/static/media/CategoryImg.b208cb0d.jpg"
   },
   {
     "revision": "27eca13790961351b5e4476e0091e900",
     "url": "/drinks_app/static/media/ContactImg.27eca137.jpg"
   },
   {
-    "revision": "0b64fb43e9c3ca5d82d96156a40a2da8",
-    "url": "/drinks_app/static/media/GlassImg.0b64fb43.jpg"
+    "revision": "5412c5e1a4ce3aa0eec5f49410ce32ad",
+    "url": "/drinks_app/static/media/GlassImg.5412c5e1.jpg"
   },
   {
-    "revision": "9aa7acea438385db81a516824f3b83ca",
-    "url": "/drinks_app/static/media/IngredientImg.9aa7acea.jpg"
+    "revision": "9586ec1ed2dc26365edddac6717fee1f",
+    "url": "/drinks_app/static/media/IngredientImg.9586ec1e.jpg"
   },
   {
     "revision": "f49e0959e2095d3b16d196d304c3e6b5",
