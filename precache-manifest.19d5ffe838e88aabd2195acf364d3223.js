@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "db989dd33061177459828cbbb535ca26",
+    "revision": "f2baf1ba1d3f67bb90554e46a8f9c15c",
     "url": "/drinks_app/index.html"
   },
   {
-    "revision": "0bcee01b42c838114465",
-    "url": "/drinks_app/static/css/main.099ec1d2.chunk.css"
+    "revision": "2adbfb2e9024544c8509",
+    "url": "/drinks_app/static/css/main.263cb81a.chunk.css"
   },
   {
-    "revision": "06f1f579a5bd46b69a78",
-    "url": "/drinks_app/static/js/2.9bf05c13.chunk.js"
+    "revision": "e6101c4fc8985a0a5753",
+    "url": "/drinks_app/static/js/2.c515fd23.chunk.js"
   },
   {
     "revision": "3b360bdbbf2b060d70fbfa785d0a310b",
-    "url": "/drinks_app/static/js/2.9bf05c13.chunk.js.LICENSE.txt"
+    "url": "/drinks_app/static/js/2.c515fd23.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0bcee01b42c838114465",
-    "url": "/drinks_app/static/js/main.0678efb1.chunk.js"
+    "revision": "2adbfb2e9024544c8509",
+    "url": "/drinks_app/static/js/main.2aaa28c2.chunk.js"
   },
   {
     "revision": "f2ed22ed588311e1cc44",
