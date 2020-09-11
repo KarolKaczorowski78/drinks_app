@@ -1,5 +1,6 @@
 @import '../../universal/scss/mixins/flexbox';
 @import '../../universal/scss/mixins/transform';
+@import '../../universal/scss/mixins/prefixes';
 
 .contact-section {
     width: 100vw;
@@ -9,6 +10,8 @@
     padding-top: 50px;
     padding-bottom: 20px;
     position: relative;
+    box-sizing: border-box;
+    @include prefixes(box-sizing, border-box, (moz, webkit));
     @include flexbox(flex-start, center, column);
     * { 
         z-index: 2;
@@ -29,14 +32,13 @@
     h3 {
         color: rgb(255, 197, 39);
     } 
+    p, label, h1 {
+        background: rgba(0, 0, 0, .8);
+    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 950px) {
     .contact-section img {
-        opacity: .5;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
+        display: none;
     }
 }

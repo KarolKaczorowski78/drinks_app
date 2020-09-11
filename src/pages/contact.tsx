@@ -5,7 +5,7 @@ import SocialMedia from '../components/contact/social_media_button/socialMedia';
 import ContactImage from '../img/ContactImg.jpg';
 import HomeImage from '../components/home/home_image/homeImage';
 import gsap from 'gsap';
-import RedirectButton from '../components/universal/browse_drinks_button/browseDrinksButton';
+import RedirectButton from '../components/universal/browse_drinks_button/redirectButton';
 
 const Contact = () => {
 

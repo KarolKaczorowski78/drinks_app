@@ -1,15 +1,40 @@
-.search-form-input,
-.search-form-submit {
-    display: inline-block;
-    font-size: 15px;
-    padding: 5px 6px;
-    border: 2px solid rgb(255, 197, 39);
-    color: rgb(255, 197, 39);
-    background: rgba(0, 0, 0, .7);
-    border-radius: 0;
-    -webkit-appearance: none;
+@import '../../../../universal/scss/mixins/prefixes';
+
+.search-form {
+    height: 50px;
+    @include prefixes(flex, .8, (ms));
+    max-width: 500px;
+    min-width: 240px;
+    border-bottom: 1px solid #376E6F;
+    background: rgb(15, 15, 25);
+    &-input,
+    &-submit {
+        display: inline-block;
+        height: 100%;
+        font-size: 20px;
+        box-sizing: border-box;
+        background: inherit;
+        padding: 5px 6px;
+        border: none;
+        -webkit-appearance: none;
+    }
+    &-submit {
+        width: 40px;
+    }
+    &-input {
+        width: calc(100% - 40px);
+    }
 }
 
-.search-form-submit {
-    border-left: none;
+@media (max-width: 500px) {
+    .search-form {
+        position: absolute;
+        top: 80px;
+        width: 95vw;
+        left: 2.5vw; 
+        height: 40px;
+        &-input, &-submit {
+            font-size: 15px;
+        }
+    }
 }

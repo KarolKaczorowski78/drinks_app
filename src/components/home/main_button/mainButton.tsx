@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { ReactNode }  from 'react';
 import './main_button.scss';
 
-const MainButton = (props: { children: string, clickScrollValue: boolean | number }) => {
+const MainButton = (props: { children: string | ReactNode , clickScrollValue: boolean | number }) => {
 
     const handleClick = () => {
         typeof props.clickScrollValue === "number" && window.scrollTo({ 

@@ -1,20 +1,21 @@
 import React, { FC, useState, useEffect, createContext } from 'react';
 import Navigation from '../components/drinks/navigation/navigation';
 import DrinksContainer from '../components/drinks/drinks_container/drinksContainer';
-import getCocktailByName, { Drink } from '../recieving_data/get_requests/get_cocktail_by_name';
-import getCocktailsByFilter from '../recieving_data/get_requests/get_cocktails_by_filter_2';
+import { RecivingDataDrink } from '../components/drinks/new_drink/drinkInterface';
+import getCocktailByName from '../recieving_data/get_requests/getCocktailsByName';
+import getCocktailsByFilter from '../recieving_data/get_requests/getCocktailsByFilters';
 import Filterer from '../recieving_data/filterer';
 
 export const DisplayedDrinksContext = createContext<{ 
-        updateDrinks: (drinks: Drink[]) => void 
-    }>({ updateDrinks: (drinks: Drink[]) => {  } });
+        updateDrinks: (drinks: RecivingDataDrink[]) => void 
+    }>({ updateDrinks: (drinks: RecivingDataDrink[]) => {  } });
 
 const Drinks: FC = () => {
  
-    const [displayedDrinks, setDisplayedDrinks] = useState<Drink[]>([]);
+    const [displayedDrinks, setDisplayedDrinks] = useState<RecivingDataDrink[]>([]);
     const [componentDidMount, setComponentDidMount] = useState<boolean>(false);
 
-    const changeDisplayedDrinks = (drinks: Drink[]): void => {
+    const changeDisplayedDrinks = (drinks: RecivingDataDrink[]): void => {
         setDisplayedDrinks([...drinks]);
     }
 

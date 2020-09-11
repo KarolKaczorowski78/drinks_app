@@ -1,0 +1,43 @@
+@import '../../../../../universal/scss/mixins/transition';
+@import '../../../../../universal/scss/mixins/flexbox';
+@import '../../../../../universal/scss/mixins/transform';
+@import '../../../../../universal/scss/mixins/prefixes';
+
+.filter-list-container {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border: inherit;
+    position: absolute;
+    background: rgba(15, 15, 25, .75);
+    right: 0;
+    top: 110px;
+    z-index: 3;
+    @include transform(scaleY(0));
+    @include prefixes(transform-origin, top, (webkit, moz, ms));
+    @include transition(.2s ease-out);
+    @include flexbox(center, center, row, wrap);
+    &-title {
+        display: block;
+        color: black;
+    };
+    
+    &:hover, &:active {
+        @include transform(scale(1));
+        @include transition(.3s ease-out);
+    }
+}
+
+@media (max-width: 500px) {
+    .filter-list-container {
+        top: 95px;
+    }
+}
+
+@media (max-width: 700px) {
+    .filter-list-container {
+        flex-direction: column;
+        -ms-flex-direction: column;
+    }
+}

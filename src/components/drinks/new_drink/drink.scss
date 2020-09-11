@@ -1,0 +1,71 @@
+@import '../../../universal/scss/mixins/flexbox';
+@import '../../../universal/scss/mixins/transition';
+@import '../../../universal/scss/mixins/prefixes';
+
+.drink {
+    width: 350px;
+    height: 350px;
+    border-radius: 10%;
+    position: relative;
+    margin: 10px 20px;
+    &__container-absolute, &__image, &__data {
+        width: 100%;
+        height: 100%;
+    }
+
+    &__container-absolute {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    &__image {
+        border-radius: 10%;
+        @include prefixes(object-fit, cover, (o));
+        @include prefixes(object-position, center, (o));
+    }
+    &__data {
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 10%;
+        text-align: center;
+        color: white;
+        @include transition(.4s ease-out);
+        @include flexbox(space-evenly, center, column);
+        &:hover {
+            opacity: .8;
+        }
+        & > * {
+            margin: 0;
+        }
+        & > h3 {
+            font-size: 2rem;
+            max-width: 90%;
+            @include prefixes(text-overflow, ellipsis, (ms, o));
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        & > h4 {
+            font-size: 1.5rem;
+        }
+        & > a {
+            font-size: 1.8rem;
+            text-decoration: none;
+            text-shadow: 0 0 10px blue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: white;
+        }
+    }
+    &__ingredients-list {
+        list-style: none;
+        padding: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .drink {
+        width: 250px;
+        height: 300px;
+    }
+}

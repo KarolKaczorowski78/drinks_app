@@ -1,21 +1,23 @@
 @import '../../universal/scss/mixins/prefixes';
+@import '../../universal/scss/mixins/transform';
 
 .drink-details-container {
     visibility: visible;
     text-align: center;
+    padding-bottom: 100px;
     & > h1 {
         color: white;
         i {
-            @include prefixes(animation, 1s ease-in spin infinite, (webkit));
+            @include prefixes(animation, 1s ease-in spin infinite, (webkit, moz, ms, o));
         }
     }
 }
 
 @keyframes spin {
     from {
-        transform: rotate(0deg);
+        @include transform(rotate(0deg));
     }
     to {
-        transform: rotate(360deg);
+        @include transform(rotate(360deg));
     }
 }

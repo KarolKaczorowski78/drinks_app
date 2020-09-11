@@ -1,0 +1,50 @@
+@mixin borders-radius {
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+}
+
+.drink {
+    width: 250px; 
+    height: 350px;
+    border: 3px solid black;
+    margin: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    @include borders-radius();
+
+    &-image {
+        width: 100%;
+        height: auto;
+        max-height: 85%;
+        @include borders-radius();
+    }
+
+    &-name-container {
+        font-family: cursive;
+    }
+
+    button {
+        border: 1.5px solid black;
+        padding: 10px 20px;
+        position: absolute;
+        bottom: 5px;
+        span {
+            color: white;
+        }
+        &:hover {
+            background: yellow;
+            ul {
+                visibility: visible;
+            }
+        }
+    }
+
+    &-ingredients {
+        left: 5px;
+    }
+
+    &-details {
+        right: 5px;
+    }
+}

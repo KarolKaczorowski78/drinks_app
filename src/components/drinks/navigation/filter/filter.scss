@@ -1,21 +1,22 @@
 @import '../../../../universal/scss/mixins/transition';
+@import '../../../../universal/scss/mixins/prefixes';
+@import '../../../../universal/scss/mixins/transform';
 
 .filter {
-    width: 40px;
-    height: 40px;
-    border: 2px solid rgb(255, 197, 39);
-    color: rgb(255, 197, 39);
+    width: 50px;
+    height: 50px;
     border-radius: 10%;
     text-align: center;
     vertical-align: middle;
-    line-height: 40px;
+    line-height: 50px;
+    @include prefixes(box-sizing, border-box, (webkit, moz));
     &-icon {
         font-size: 20px;
     }
     &:hover, &:active {
         .filter-list-container {
-            transform: scaleY(1);
-            transition: .3s ease-out;
+            @include transition(.3s ease-out);
+            @include transform(scaleY(1));
         }
     }
 }

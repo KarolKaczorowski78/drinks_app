@@ -1,4 +1,5 @@
 @import '../../../../../universal/scss/mixins/flexbox';
+@import '../../../../../universal/scss/mixins/prefixes';
 
 .filter-picker {
     text-align: center;
@@ -11,6 +12,7 @@
     overflow-y: auto;
     z-index: 4;
     padding-top: 25px;
-    background: rgba(0, 0, 0, .8);
-    @include flexbox(flex-start, center, column, nowrap);
+    background: rgba(15, 15, 35, 1);
+    @include prefixes(box-sizing, border-box, (moz, webkit));
+    @include flexbox(flex-start, center, column);
 }

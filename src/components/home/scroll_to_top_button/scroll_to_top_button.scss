@@ -15,7 +15,7 @@
 
 .shown {
     visibility: visible;
-    @include prefixes(animation, 1s scroll-to-top-btn-anim infinite, (webkit));
+    @include prefixes(animation, 1s scroll-to-top-btn-anim infinite, (webkit, moz, o));
     &:hover {
         animation: none;
     }

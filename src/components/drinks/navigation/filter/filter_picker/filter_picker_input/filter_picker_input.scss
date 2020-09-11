@@ -1,10 +1,14 @@
+@import '../../../../../../universal/scss/mixins/prefixes';
+@import '../../../../../../universal/scss/mixins/linearGradient';
+
 .filter-picker-input {
     margin: 35px 0 10px;
     width: 260px;
-    box-sizing: border-box;
+    @include prefixes(box-sizing, border-box, (webkit, moz));
     padding: 10px 15px;
     background: none;
-    border: 3px solid rgb(225, 215, 139);
-    border-radius: 15%;
-    color: white;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #376E6F;
+    @include linear-gradient((to top, rgb(10, 10, 25), rgb(15, 15, 35)))
 }

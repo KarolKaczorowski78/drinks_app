@@ -1,6 +1,6 @@
 import React, { useState, createContext, SetStateAction, Dispatch } from 'react';
 import FilterPicker from './filter_picker/filterPicker';
-import FilterList from './filter_list/filterList';
+import FilterList from './new_filter_list/filterList';
 import Filterer from '../../../../recieving_data/filterer';
 import './filter.scss';
 
@@ -10,7 +10,7 @@ const Filter = () => {
 
     const initialChosenFilters: string[] = Object.values(Filterer);
 
-    const [chosenFilter, setChosenFilter] = useState('');
+    const [chosenFilter, setChosenFilter] = useState<string>('');
     const [chosenFilters, setChosenFilters] = useState<string[]>(initialChosenFilters);
     const [filterPickerVisibility, setFilterPickerVisibility] = useState<boolean>(false);
 

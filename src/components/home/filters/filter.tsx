@@ -6,7 +6,7 @@ const Filter = (props: { src: string, filterName: string }) => {
             <div className="filters-introduction-container-image-container-hidden-content">
                 <h2>{ props.filterName }</h2>
             </div> 
-            <img className="filters-introduction-container-image" src={ props.src } alt=""/>
+            <img className="filters-introduction-container-image-container-image" src={ props.src } alt=""/>
         </div>
     )
 }

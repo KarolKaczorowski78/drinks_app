@@ -1,6 +1,6 @@
-import { Drink } from '../../recieving_data/get_requests/get_cocktail_by_name';
+import { RecivingDataDrink } from '../../components/drinks/new_drink/drinkInterface';;
 
-const prepareIngredients = (drink: Drink): string[] => Object.entries(drink).filter(([key, value]) => 
+const prepareIngredients = (drink: RecivingDataDrink): string[] => Object.entries(drink).filter(([key, value]) => 
 (key.includes('strIngredient') && value !== null && value.length > 0)).map(entry => entry[1]);
 
 export default prepareIngredients;

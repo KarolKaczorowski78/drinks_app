@@ -1,19 +1,18 @@
 @import '../../../universal/scss/mixins/flexbox';
 @import '../../../universal/scss/mixins/transition';
 @import '../../../universal/scss/mixins/transform';
+@import '../../../universal/scss/mixins/prefixes';
 
-.filters-introduction-container {
-    width: 100vw;
-    height: auto;
-    @include flexbox(center, center, row, wrap);
-    &-image-container {
+.filters-introduction-container-image-container {
         position: relative;
+        display: inline-block;
         width: 200px;
         height: 70vh;
         border: 1px solid white;
         opacity: 0;
         visibility: hidden;
         @include transition(.2s ease-out);
+        @include transform(translateX(-20px));
         &:hover {
             @include transform(scale(1.05)!important);
             margin: 0 8px;
@@ -32,18 +31,17 @@
             top: 0;
             @include transition(.2s ease-out);
         }
-    }
-    &-image {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-        object-position: 50% 0;
-    }
+        &-image {
+            height: 100%;
+            width: 100%;
+            @include prefixes(object-position, 50% 0, (o));
+            @include prefixes(object-fit, cover, (o));
+        }
 }
 
 @media (max-width: 850px) {
     .filters-introduction-container {
-        flex-direction: column;
+        @include prefixes(flex-direction, column, (ms));
         &-image-container {
             width: 70vw;
             height: 200px;
@@ -51,7 +49,7 @@
                 margin: 8px 0;
             }
             &:nth-of-type(1) img {
-                object-position: 50% 20%;
+                @include prefixes(object-position, 50% 20%, (o));
             }
 
             &:nth-of-type(2) img {
@@ -60,7 +58,6 @@
         }
         &-image {
             object-position: 50% 50%;
-
         }
     }
 

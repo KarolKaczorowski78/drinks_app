@@ -1,12 +1,12 @@
 import React, { ReactNode, useState, useEffect } from 'react';
-import Drink from '../drink/drink';
-import { Drink as DrinkInterface } from '../../../recieving_data/get_requests/get_cocktail_by_name';
+import Drink from '../new_drink/drink';
+import { RecivingDataDrink } from '../new_drink/drinkInterface';
 import prepareIngredients from '../../../universal/ts/prepare_ingredients';
 import './drinks_container.scss';
 
-const DrinksContainer = (props: { drinks: DrinkInterface[] }) => {
+const DrinksContainer = (props: { drinks: RecivingDataDrink[] }) => {
 
-    const prepareDrinks = (drinksArray: DrinkInterface[]): ReactNode[] => 
+    const prepareDrinks = (drinksArray: RecivingDataDrink[]): ReactNode[] => 
         drinksArray.map((drink, i) => {
             const { idDrink, strDrink, strDrinkThumb } = drink;
             const ingredients: string[] = prepareIngredients(drink);

@@ -3,13 +3,23 @@
 @import '../../../universal/scss/mixins/transition';
 
 .navigation {
-    width: 98vw;
-    height: 100px;
+    width: 100vw;
+    height: 100px;    
     @include flexbox(space-between, center);
-    box-sizing: border-box;
-    padding: 0 20px;
+    @include prefixes(box-sizing, border-box, (wevkit, moz));
     position: relative;
-    border: 2px solid rgb(255, 197, 39);
-    background: black;
-    color: white;
+    border-bottom: 2px solid #376E6F;
+    padding: 0 10px;
+    background: rgb(15, 15, 25);
+    * {
+        color: #88BDBC;
+    }
+}
+
+@media (max-width: 500px) {
+    .navigation {
+        height: 140px;
+        @include flexbox(space-between, flex-start);
+        padding-top: 10px;
+    }
 }

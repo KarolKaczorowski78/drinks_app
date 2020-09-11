@@ -16,7 +16,7 @@ const Contact = () => {
 
     useEffect(() => {
         (() => { setTimeout(() => setShow(true), 4000) })()
-    });
+    }, []);
 
     return (
         <Link to='/contact' style={{ textDecoration: 'none' }}>

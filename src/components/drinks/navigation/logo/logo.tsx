@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './logo.scss';
 
 function Logo() {
     return (
-        <div className="logo-container">
+        <Link to="/" className="logo-container">
             <i className="fas fa-glass-cheers"></i>
-            <span> Drinkify</span>
-        </div>
+            <span> Drinkery</span>
+        </Link>
     )
 }
 

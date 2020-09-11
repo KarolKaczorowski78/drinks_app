@@ -1,6 +1,6 @@
-import { Drink } from './get_cocktail_by_name';
+import { RecivingDataDrink } from '../../components/drinks/new_drink/drinkInterface';
 
-const getCocktails = async (method: string, query: string, value: string): Promise<Drink[]> => {
+const getCocktails = async (method: string, query: string, value: string): Promise<RecivingDataDrink[]> => {
     try {
         const data: Response = await fetch(`https://the-cocktail-db.p.rapidapi.com/${method}.php?${query}=${value}`, {
             "method": "GET",
@@ -10,7 +10,7 @@ const getCocktails = async (method: string, query: string, value: string): Promi
             }
         });
         const json = await data.json();
-        const drinks: Drink[] = json[Object.keys(json)[0]];
+        const drinks: RecivingDataDrink[] = json[Object.keys(json)[0]];
 
         return drinks;
     }

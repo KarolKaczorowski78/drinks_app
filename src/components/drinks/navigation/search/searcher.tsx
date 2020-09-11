@@ -1,6 +1,6 @@
 import React, { useRef, useContext } from 'react';
 import { DisplayedDrinksContext } from '../../../../pages/drinks';
-import getCocktailByName from '../../../../recieving_data/get_requests/get_cocktail_by_name';
+import getCocktailByName from '../../../../recieving_data/get_requests/getCocktailsByName';
 import './searcher.scss';
 
 const Searcher = () => {

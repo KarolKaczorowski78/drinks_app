@@ -1,10 +1,10 @@
 @import '../../../universal/scss/mixins/flexbox';
 
 .drinks-container {
-    width: 96vw;
+    width: 100%;
     height: calc(100vh - 120px);
     min-height: 250px;    
     overflow-y: auto;
-    background: black;
+    background: rgb(10, 10, 15);
     @include flexbox(center, flex-start, row, wrap);
 }

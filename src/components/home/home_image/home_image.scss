@@ -1,14 +1,17 @@
 @import '../../../universal/scss/mixins/transition';
 @import '../../../universal/scss/mixins/transform';
+@import '../../../universal/scss/mixins/prefixes';
 
 .home-image {
     position: absolute;
     bottom: 0;
     height: 100%;
+    height: 100vh;
     width: auto;
     max-width: 100vw;
-    object-fit: cover;
+    @include prefixes(object-fit, cover, (o));
     @include transition(.4s);
+    z-index: 0;
 }
 
 .right {

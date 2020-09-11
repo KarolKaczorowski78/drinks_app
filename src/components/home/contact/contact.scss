@@ -16,7 +16,7 @@
     border-radius: 50%;
     text-align: center;
     @include transition(.4s ease-in);
-    @include prefixes(animation, 1s contact-anim infinite, (webkit));
+    @include prefixes(animation, 1s contact-anim infinite, (webkit, moz, ms, o));
 }
 
 @keyframes contact-anim {

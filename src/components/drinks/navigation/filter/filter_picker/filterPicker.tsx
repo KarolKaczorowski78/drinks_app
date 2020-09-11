@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useContext, Dispatch, SetStateAction } from 'react'
-import getFilters from '../../../../../recieving_data/get_requests/get_filters';
+import getFilters from '../../../../../recieving_data/get_requests/getFilters';
 import FilterPickerButton from './filter_picker_button/filterPickerButton';
 import FilterPickerInput from './filter_picker_input/filterPickerInput';
 import ExitButton from '../../../exit_button/exitButton';

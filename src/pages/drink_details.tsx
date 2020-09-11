@@ -1,8 +1,8 @@
 import React, { useState, ReactNode, useEffect } from 'react';
-import getCocktailById from '../recieving_data/get_requests/get_cocktail_by_id';
+import getCocktailById from '../recieving_data/get_requests/getCocktailById';
 import DetailedDrink from '../components/drink_details/detailed_drink/detailedDrink';
 import prepareIngredients from '../universal/ts/prepare_ingredients';
-import RedirectButton from '../components/universal/browse_drinks_button/browseDrinksButton';
+import RedirectButton from '../components/universal/browse_drinks_button/redirectButton';
 import { useParams } from 'react-router-dom';
 import '../components/drink_details/drink_details.scss';
 

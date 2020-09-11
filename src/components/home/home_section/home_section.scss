@@ -1,14 +1,17 @@
 @import '../../../universal/scss/mixins/flexbox';
 @import '../../../universal/scss/mixins/transform';
+@import '../../../universal/scss/mixins/prefixes';
 
 .home-section {
     width: 100vw;
-    height: 100vh;
+    max-width: 100%;
+    height: auto;
+    min-height: 100vh;
     background: black;
     padding-top: 50px;
-    box-sizing: border-box;
     position: relative;
-    @include flexbox(flex-start, center, column);
+    text-align: center;
+    @include prefixes(box-sizing, border-box, (moz, webkit));
     &:nth-of-type(2) {
         .home-image {
             @include transform(translateX(-50px));
@@ -32,23 +35,31 @@
     * {
         text-align: center;
         color: white;
+    } 
+    h1, p, button {
+        background: rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 2;
+        position: relative;
+        @include transform(translateY(20px))
+    }
+    h1, p  {
+        width: 100vw;
     }
 }
 
 @media (max-width: 950px) {
-    .home-section:first-of-type  {
-        & .home-image:nth-of-type(2) {
+    .home-section  {
+        & > .home-image:first-of-type {
             display: none;
         }
-        & .home-image:first-of-type {
+        & > .home-image:nth-of-type(2) {
             margin-left: auto;
             margin-right: auto;
             left: 0;
             right: 0;
         }
     } 
-
-    .home-image {
-        opacity: .6!important;
-    }
 }

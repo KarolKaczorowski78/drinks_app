@@ -6,15 +6,17 @@ import ImageGlass from '../../../img/GlassImg.jpg';
 import Filter from './filter';
 import './filters.scss';
 
-const Filters = () => {
+const getFilters = () => {
     return (
-        <div className="filters-introduction-container">
+        <>
+        {/* // <div className="filters-introduction-container"> */}
             <Filter src={ ImageCategory } filterName="Category" />
             <Filter src={ ImageIngredient } filterName="Ingredient" />
             <Filter src={ ImageAlcoholic } filterName="Alcohol content" />
             <Filter src={ ImageGlass } filterName="Glass" />
-        </div>
+        </>
+        // {/* </div> */}
     )
 }
 
-export default Filters;
+export default getFilters;
