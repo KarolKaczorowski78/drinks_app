@@ -9,12 +9,12 @@ import './filter_button.scss';
 
 const Filterbutton = (props: props) => {
 
-    const contextShit = useContext(FilterContext);
+    const usedContext = useContext(FilterContext);
     const anotherContext = useContext(DisplayedDrinksContext);
 
     const handleClick = () => {
-        if (contextShit !== null) {
-            const { changeChosenFilter, toggleFilterPickerVisibility } = contextShit;
+        if (usedContext) {
+            const { changeChosenFilter, toggleFilterPickerVisibility } = usedContext;
             changeChosenFilter(props.filterName);
             toggleFilterPickerVisibility(true);
         }
@@ -22,10 +22,10 @@ const Filterbutton = (props: props) => {
 
     const handleClick2 = () => {
 
-        (contextShit && Object.keys(Filterer).includes(props.filterName)) && (async () => {
+        (usedContext && Object.keys(Filterer).includes(props.filterName)) && (async () => {
             const newProp = props.filterName as FiltererProp;
             updateFilterer(newProp, '');
-            contextShit.changeChosenFilters(state => {
+            usedContext.changeChosenFilters(state => {
                 state.splice(Object.keys(Filterer).indexOf(newProp), 1, '')
                 return state;
             }) 
