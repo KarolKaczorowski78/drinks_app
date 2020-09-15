@@ -1,4 +1,5 @@
 import { RecivingDataDrink } from '../../components/drinks/new_drink/drinkInterface';
+import apiKey from '../../universal/ts/apiKey';
 
 const getCocktails = async (method: string, query: string, value: string): Promise<RecivingDataDrink[]> => {
     try {
@@ -6,7 +7,7 @@ const getCocktails = async (method: string, query: string, value: string): Promi
             "method": "GET",
             "headers": {
                 "x-rapidapi-host": "the-cocktail-db.p.rapidapi.com",
-                "x-rapidapi-key": "4d50f7c52amsh2ec8508c35a7811p1c477ajsn875d8e36fd67"
+                "x-rapidapi-key": apiKey
             }
         });
         const json = await data.json();
