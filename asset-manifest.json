@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/drinks_app/static/css/main.d5499ec7.chunk.css",
+    "main.css": "/drinks_app/static/css/main.628354a9.chunk.css",
     "main.js": "/drinks_app/static/js/main.a93ba2c7.chunk.js",
     "main.js.map": "/drinks_app/static/js/main.a93ba2c7.chunk.js.map",
     "runtime-main.js": "/drinks_app/static/js/runtime-main.397397ce.js",
@@ -8,9 +8,9 @@
     "static/js/2.7e821909.chunk.js": "/drinks_app/static/js/2.7e821909.chunk.js",
     "static/js/2.7e821909.chunk.js.map": "/drinks_app/static/js/2.7e821909.chunk.js.map",
     "index.html": "/drinks_app/index.html",
-    "precache-manifest.bb42c202669f93e81316bd0a192cba72.js": "/drinks_app/precache-manifest.bb42c202669f93e81316bd0a192cba72.js",
+    "precache-manifest.d3c83b110341bbb8e2ff1853d1d00596.js": "/drinks_app/precache-manifest.d3c83b110341bbb8e2ff1853d1d00596.js",
     "service-worker.js": "/drinks_app/service-worker.js",
-    "static/css/main.d5499ec7.chunk.css.map": "/drinks_app/static/css/main.d5499ec7.chunk.css.map",
+    "static/css/main.628354a9.chunk.css.map": "/drinks_app/static/css/main.628354a9.chunk.css.map",
     "static/js/2.7e821909.chunk.js.LICENSE.txt": "/drinks_app/static/js/2.7e821909.chunk.js.LICENSE.txt",
     "static/media/AboutImg.jpg": "/drinks_app/static/media/AboutImg.ec303732.jpg",
     "static/media/AlcoholicImg.jpg": "/drinks_app/static/media/AlcoholicImg.38c7d28b.jpg",
@@ -24,7 +24,7 @@
   "entrypoints": [
     "static/js/runtime-main.397397ce.js",
     "static/js/2.7e821909.chunk.js",
-    "static/css/main.d5499ec7.chunk.css",
+    "static/css/main.628354a9.chunk.css",
     "static/js/main.a93ba2c7.chunk.js"
   ]
 }
